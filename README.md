@@ -1,6 +1,7 @@
 # K-Means Algorithm Repository
-
-![K-Means Banner](./Images/k-means-banner.png)  <!-- Consider adding a banner image for added visual appeal -->
+<p align="left">
+  <img src="./Images/GIF.gif" alt="K-Means Banner" width="400"> <!-- You can adjust the width value as needed -->
+</p>
 
 ## Introduction
 
