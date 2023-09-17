@@ -8,15 +8,19 @@ The domain of data science and machine learning boasts a plethora of algorithms 
 
 The foundational principle underpinning K-Means is straightforward: data points within the same cluster exhibit greater similarity to each other than to those residing in disparate clusters. The operational mechanics of the algorithm can be succinctly delineated into the following iterative stages:
 
-1. **Initialization**: Arbitrarily select `k` data points, either at random or via a heuristic method, to act as the inaugural centroids.
+1. **Initialization**: Select `k` data points, either randomly or through a heuristic, to serve as the initial centroids.
   
-2. **Assignment**: Each data point is ascribed to the nearest centroid, thereby becoming an integral member of the corresponding cluster.
+2. **Cluster Assignment**: Allocate each data point to the centroid it is closest to, effectively assigning it to a specific cluster.
   
-3. **Centroid Update**: The centroids undergo recalibration, computed as the mean of all constituent points within the cluster.
+3. **Centroid Recalculation**: Adjust the centroids by computing the mean of all data points within their respective clusters.
   
-4. **Convergence Assessment**: The algorithm evaluates whether the centroids have attained stability (i.e., their displacement remains below a predetermined threshold). If stabilization is observed, the algorithm concludes its operations. If not, the process reverts to the assignment phase.
+4. **Convergence Evaluation**: The algorithm assesses the centroids' state based on two possible criteria:
+   - The stability of centroids, i.e., if their movement remains below a defined threshold.
+   - The attainment of a specified number of iterations.
+   
+   When the condition is satisfied, the algorithm terminates. Otherwise, the cycle reverts to the cluster assignment phase.
 
-This cyclical refinement persists until the centroids achieve a state of minimal fluctuation, ensuring the minimization of intra-cluster variance. It's imperative to acknowledge that the algorithm's outcomes can exhibit sensitivity to the initial positioning of centroids. Consequently, multiple initializations might be requisite to secure an optimal clustering configuration.
+It's paramount to recognize that the algorithm's results can be influenced by the initial centroid positions. As such, executing the algorithm multiple times with varied initializations may be necessary to achieve an optimal clustering solution.
 
 ## Concluding Remarks
 
