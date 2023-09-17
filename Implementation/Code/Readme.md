@@ -2,16 +2,18 @@
 
 Welcome to the technical segment of my K-Means repository. Herein, I've presented Python scripts that operationalize the K-Means algorithm. Whether you're well-versed in coding or are in the nascent stages of your programming journey, I've endeavored to ensure these scripts are both informative and accessible.
 
-## Directory Contents
+## File Structure
 
-- **data-generation.py**: This script is responsible for generating datasets tailored for clustering demonstrations.
-- **helper-functions.py**: A compilation of utility functions, essential for the seamless execution of the K-Means algorithm.
-- **k-means-implementation.py**: The central script, encapsulating the core mechanics and logic of the K-Means algorithm.
-- **plotting-results.py**: A dedicated module for visualizing the clustering outcomes, offering a visual narrative of the algorithm's efficacy.
+1. **data_generation.py**: Generates synthetic data using the `make_blobs` function from `sklearn.datasets`. The number of data points and clusters can be adjusted using function parameters.
 
-## Usage Guidelines
+2. **k_means_function.py**: Contains the custom implementation of the K-Means clustering algorithm. This script provides the core logic for clustering data points based on their proximity to centroids.
 
-1. Ensure the prerequisite Python libraries are installed.
-2. Commence with `data-generation.py` to produce the requisite dataset.
-3. Progress to `k-means-implementation.py` to witness the clustering process.
-4. Conclude with `plotting-results.py` for a visual representation of the results.
+3. **plotting_results.py**: Provides visualization functions to display the clustering results. The `plot_clusters` function visualizes data points colored by their assigned cluster and shows the centroids.
+
+4. **k_means_demo.py**: This script ties everything together. It demonstrates the K-Means clustering algorithm using both the custom implementation and the `sklearn` implementation. The results are visualized using functions from `plotting_results.py`.
+
+## Usage
+
+To run the demonstration:
+
+- Execute the `k_means_demo.py` script.
