@@ -1,8 +1,8 @@
 import numpy as np
 from sklearn.cluster import KMeans
-from k-means-function import custom_kmeans
-from data-generation import generate_data
-from plotting-results import plot_clusters
+from k_means_function import custom_kmeans
+from data_generation import generate_data
+from plotting_results import plot_clusters
 
 def main():
     # Generate data with specific parameters
